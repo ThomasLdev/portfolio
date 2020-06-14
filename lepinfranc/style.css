@@ -1,0 +1,412 @@
+/* Général */
+
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--main-color: #727b77;
+	--second-color: #30c4a3;
+	--third-color: #f7f7f4;
+	--customblack: #222222;
+	--customwhite: rgba(221,229,226,0.6);
+	--main-title: 4vw;
+	--titre1: 4rem;
+	--subtitle: 1.5em;
+	--text-shadow: #293241 2px 0px 3px;
+}
+
+.bg-light {
+	background-color: var(--third-color) !important;
+}
+
+.bg-main {
+	background-color: var(--main-color);
+}
+
+.customwhite {
+	color: var(--customwhite);
+}
+
+.bg-secondary {
+	background-color: #222222 !important;
+}
+
+.main-title {
+	font-size: var(--main-title);
+}
+
+.titre1 {
+	font-size: var(--titre1);
+}
+
+.subtitle {
+	font-size: var(--subtitle);
+}
+
+.imgBorder {
+	padding: 15px;
+	background-color: white;
+	box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+	-moz-box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+	-webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+}
+
+.responsive-img {
+	width: 100%;
+	height: auto
+}
+
+/* Barre de Navigation */
+
+.navbar {
+	background-color: transparent;
+	padding: 0.3rem;
+	transition: 0.5s ease-in !important;
+	
+}
+
+.brand-name {
+	padding-left: 1rem;
+	padding-top: 0.9rem;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+}
+
+.navbar-nav .nav-item {
+	margin-right: 2rem;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 0.1rem;
+}
+
+.nav-link{
+	transition: 0.5s ease-in !important;
+}
+
+.nav-link:hover {
+	outline: 1px solid white;
+}
+
+nav.scrolled {
+	background-color: var(--main-color);
+	transition: 0.5s ease-in;
+	box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+}
+
+.bg-light.scrolled {
+	background-color: var(--main-color);
+}
+
+.scrolled-links {
+	color: var(--customblack) !important;
+}
+
+/* Carousel */
+
+.carousel-caption {
+	position: absolute;
+	top: 38%;
+	font-family: "Montserrat", sans-serif;
+	text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-item {
+	height: 100vh;
+	min-height: 350px;
+	background: no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* Bouttons CSS */
+
+.btn-main {
+	background-color: transparent;
+	border: 1px solid white;
+	border-radius: 0;
+	padding: 0.6rem;
+	height: 3rem;
+	width: 150px;
+	padding-bottom: 2.4rem;
+}
+
+.btn-main:hover {
+	color: var(--customblack);
+	background-color: white;
+	transition: 0.4s ease;
+}
+
+.btn-toggle{
+	width: 100%;
+	padding: 20px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+/* Gallerie Photo */
+
+.gallery {
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
+	column-count: 3;
+	-webkit-column-width: 33%;
+	-moz-column-width: 33%;
+	column-width: 33%;
+}
+.gallery .pics {
+	-webkit-transition: all 350ms ease;
+	transition: all 350ms ease;
+}
+.gallery .animation {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+
+.container-img {
+	position: relative;
+	width: 100%;
+}
+
+.image {
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: 0.5s ease;
+	backface-visibility: hidden;
+}
+
+.middle {
+	transition: 0.5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.container-img:hover .image {
+	opacity: 0.3;
+}
+
+.container-img:hover .middle {
+	opacity: 1;
+}
+
+/* Social Icons */
+
+.social-icons{
+	display: flex;
+}
+
+.social-icons--column{
+	flex-direction: column;
+}
+
+.fa-facebook, .fa-instagram, .fa-phone, .fa-envelope {
+	transition: 0.4s ease-in-out;
+	width: 100%;
+}
+
+.fa-facebook:hover{
+	background-color: #4169a7;
+}
+
+.fa-instagram:hover{
+	background-color: #b07c9d;
+}
+
+.fa-phone:hover{
+	background-color: #21abf5;
+}
+
+.fa-envelope:hover{
+	background-color: #cb2926;
+}
+
+.icon-bar {
+	background-color: #cbcbc5;
+	position: fixed;
+	top: 85%;
+	right: 0%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	z-index: 3000;
+	transition: 0.4s ease-in-out;
+}
+
+.icon-bar a {
+	display: block;
+	text-align: center;
+	color: white;
+	font-size: 25px;
+	width: 100%;
+	height: 100%;
+}
+
+/*Partner Section*/
+
+.partner-wrap {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	min-width: 300px;
+}
+
+
+.partner-icon{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 70px;
+	height: 70px;
+	border-radius: 60%;
+	background-color: lightgrey;
+	transition: all 280ms ease-in-out;
+}
+
+.partner-icon--min{
+	width: 50px;
+	height: 50px;
+}
+
+.partner-icon:hover {
+	background-color: black;
+}
+
+.partner-icon a{
+	color: white;
+}
+
+.arrow {
+	border: solid black;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 5px;
+	margin-left: 25%;
+  }
+
+  .down {
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+  }
+
+  .up {
+	transform: rotate(-135deg);
+	-webkit-transform: rotate(-135deg);
+  }
+
+/* Location */
+
+.section-loc {
+	background-color: #727b77;
+	max-height: 750px;
+}
+
+.text-wrapper{
+	max-height: 750px;
+	overflow: hidden;
+}
+
+.location-text{
+	position: absolute;
+	top: 39%;
+	left: 25%;
+	font-size: 4.5vw;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 991px) {
+	.navbar-nav .nav-item {
+		margin-left: 3rem;
+		font-size: 1rem;
+		background-color: var(--main-color);
+	}
+
+	.navbar {
+		background-color: var(--main-color);
+		padding: 0.3rem;
+	}
+}
+
+@media screen and (max-width: 345px) {
+	.brand-name {
+		font-size: 0.8rem;
+	}
+}
+
+@media screen and (max-width: 295px) {
+	.brand-name {
+		display: none;
+	}
+}
+
+@media (max-width: 450px) {
+	.gallery {
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		column-count: 1;
+		-webkit-column-width: 100%;
+		-moz-column-width: 100%;
+		column-width: 100%;
+	}
+
+	
+}
+
+@media (max-width: 400px) {
+	.btn.filter {
+		padding-left: 1.1rem;
+		padding-right: 1.1rem;
+	}
+}
+
+@media screen and (max-width: 1036px) {
+	.carousel-caption h1 {
+		font-size: 3.5rem;
+	}
+}
+
+@media screen and (max-width: 906px) {
+	.carousel-caption h1 {
+		font-size: 3rem;
+	}
+}
+
+@media screen and (max-width: 882px) {
+	.carousel-caption p {
+		font-size: 1.5rem;
+	}
+}
+
+@media screen and (max-width: 620px) {
+	.carousel-caption {
+		top: 30%;
+	}
+
+	.carousel-caption h1 {
+		font-size: 3rem;
+	}
+
+	.icon-bar {
+		display: none;
+	}
+}
+
+
+

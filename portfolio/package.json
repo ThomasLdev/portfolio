@@ -1,0 +1,22 @@
+{
+    "title": "Portfolio",
+    "name": "bootstrap-portfolio",
+    "version": "5.2.2",
+    "scripts": {
+ 
+    },
+    "description": "Bootstrap Portfolio",
+
+    "license": "MIT",
+    "author": "TLDev",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ThomasLdev/portfolio.git"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "5.10.2",
+        "bootstrap": "4.3.1",
+        "jquery": "3.4.1",
+        "jquery.easing": "^1.4.1"
+    },
+}
