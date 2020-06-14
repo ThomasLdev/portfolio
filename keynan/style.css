@@ -1,0 +1,350 @@
+/*
+Theme Name: Keynan
+Author: TLDEV
+*/
+
+/* General */
+
+.image-size img{
+  width: 100%;
+  height: auto;
+}
+
+h1{
+  font-family: 'Abel', sans-serif;
+  font-weight: 700;
+}
+
+.secondary-header{
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  background-color: #007bc3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.text-shadow {
+  text-shadow: 0 .1875rem .2475rem rgba(25,61,77,0.6);
+}
+
+.subtitle {
+  font-family: 'Cantarell', sans-serif;
+  letter-spacing: 1px;
+}
+
+.icon-color{
+  color: #0081c8;
+}
+
+.line-height{
+  line-height: 2.5;
+}
+
+body {
+  font-family: 'Abel', sans-serif;
+  font-weight: 600;
+}
+
+/*Btns*/
+
+.btn-xl {
+  padding: 1rem 1.75rem;
+  font-size: 1.25rem;
+  border-radius: 0;
+  font-family: 'Arimo', sans-serif;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: white;
+  color: #007bc3;
+}
+
+.btn-social {
+  border-radius: 100%;
+  display: inline-flex;
+  width: 3.25rem;
+  height: 3.25rem;
+  font-size: 1.25rem;
+  justify-content: center;
+  align-items: center;
+  transition: .3s ease-in-out;
+}
+
+/*Navbar*/
+
+#mainNav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 700;
+}
+#mainNav .navbar-brand {
+  color: #fff;
+}
+#mainNav .navbar-nav {
+  margin-top: 1rem;
+}
+#mainNav .navbar-nav li.nav-item a, .nav-link {
+  color: black;
+  transition: .3s ease-in-out;
+  font-family: 'Arimo', sans-serif;
+  font-weight: 800;
+}
+#mainNav .navbar-nav li.nav-item a:hover, .nav-link:hover {
+  color: #007bc3;
+}
+#mainNav .navbar-nav li.nav-item a:active, #mainNav .navbar-nav li.nav-item a:focus {
+  color: #007bc3;
+}
+#mainNav .navbar-nav li.nav-item a.active {
+  color: #007bc3;
+}
+#mainNav .navbar-toggler {
+  font-size: 80%;
+  padding: 0.8rem;
+}
+
+.nav-item a, .nav-link{
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navbar-toggler{
+  background-color: #007bc3 !important;
+}
+
+.navbar-toggler:hover{
+  background-color: #f0f5f7 !important;
+}
+
+/*Header*/
+
+.masthead {
+  height: 600px;
+  margin-top: 7%;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+}
+
+.masthead-text {
+ margin-top: 28%;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.masthead .masthead-heading {
+  font-size: 2.75rem;
+  line-height: 2.75rem;
+}
+.masthead .masthead-subheading {
+  font-size: 1.25rem;
+}
+
+/* Skills */
+
+.icons-wrap{
+  width: 50%;
+}
+
+.text-wrap p{
+  font-size: .8vw;
+}
+
+
+/* Footer */
+
+.footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+.copyright {
+  background-color: #1a252f;
+}
+
+/* Card Widget */
+
+.card {
+  transition: .3s ease-in-out;
+  border-radius: 0;
+}
+
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.card-img-top {
+  border-radius: 0;
+}
+
+.transition{
+  background-position: top !important;
+}
+
+.transition-wrap {
+  display: flex;
+  border: 1px solid lightgrey;
+  height: 170px;
+  width: 80%;
+}
+
+.text-wrap {
+  background-color: transparent;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: small;
+  font-weight: bolder;
+}
+
+.icons-wrap {
+  display: flex;
+  background-color: rgba(25, 61, 77, 0.5);
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid lightgrey;
+  padding: 2rem;
+}
+
+/* Contact */
+
+#map {
+  width: 100%;
+  height: 400px;
+}
+
+.input-file {
+  display: none !important;
+}
+
+/* Carrières */
+
+.text-content{
+  background-color: #f0f5f7;
+  transition: .3s ease-in-out;
+}
+
+.text-content:hover{
+  background-color: #007bc3;
+}
+
+.carrier-link{
+  text-decoration: none;
+  color: black;
+  transition: .3s ease-in-out;
+}
+
+.carrier-link:hover{
+  color: white;
+  text-decoration: none;
+}
+
+.image-wrapper{
+  transition: .3s ease-in-out;
+}
+
+.image-wrapper:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/* Activities */
+
+.text-wrapper-activities{
+  width: 100%;
+  height: 100%;
+  background-color: lightgrey;
+}
+
+/* Tech */
+
+.icon-tech{
+  width: 80px;
+  height: 80px;
+  background-color: aliceblue;
+  border-radius: 50%;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+  }
+  #mainNav .navbar-brand {
+    font-size: 1.75em;
+    transition: font-size 0.3s;
+  }
+  #mainNav .navbar-nav {
+    margin-top: 0;
+  }
+
+  #mainNav.navbar-shrink {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1.5em;
+  }
+  
+}
+
+@media (max-width: 992px) {
+  .mast{
+    justify-content: center !important;
+    margin: 0;
+  }
+
+  .masthead .mast-content{
+    margin: 0 !important;
+    font-size: 3vw !important;
+  }
+
+  .column{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .margin-media{
+    margin-top: 2rem !important;
+  }
+  
+}
+
+@media (max-width: 800px){
+  .text-wrap p{
+    font-size: 2vw;
+
+  }
+  
+}
+
+@media (max-width: 420px){
+  .text-wrap p{
+    font-size: 2.5vw;
+
+  }
+  
+}
+
+
+
+
+
+
